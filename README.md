@@ -1,4 +1,4 @@
-# swoole_mysqlpool
+# SWOOLE携程MYSQL数据库连接池
 
 ### 使用Swoole的\Swoole\Coroutine\MySQL创建连接，通过静态类和静态成员属性维护连接池，不同协程可以共享该连接池。
 
@@ -13,6 +13,7 @@
 与独立的连接池（worker进程间可共享的连接池实现）对比，无进程间通信开销；
 独立的连接池需要增加运维成本。
 # 使用方法
+- 环境要求swoole2.0 + 开启携程
 - 运行MysqlServer.php
 - 更改测试代码数据库连接信息
 - 运行test.php测试
